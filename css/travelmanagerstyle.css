@@ -1,0 +1,585 @@
+.tm_plugin .hide{
+    display: none!important;
+}
+.tm_plugin div.eventycalendar div.navigation a.align-right{
+    float:right;
+}
+.tm_plugin div.text-right{
+    text-align: right;
+}
+
+.tm_plugin div.ui-dialog{
+    z-index: 15000;
+}
+
+.tm_plugin div.eventycalendar{
+    border:0px solid black;
+}
+
+.tm_plugin div.wp-block-column.columnimage{
+    padding-right:10px;
+}
+
+
+.tm_plugin .button_categories{
+    margin-right:5px;
+}
+
+.tm_plugin .button_categories:last-child{
+    margin-right:0;
+}
+
+.tm_plugin .wp-block-button-month {
+    background-color: #DCDCDC;
+    margin-right: 15px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+
+.tm_plugin .alternierend .wp-block-columns:nth-child(even) {
+    background-color: unset;
+}
+
+.tm_plugin .alternierend .wp-block-columns:nth-child(odd) {
+    background-color: #DCDCDC;
+}
+
+.tm_plugin div.text-center.buchung{
+    margin-top:13px;
+    margin-bottom: 13px;
+}
+.tm_plugin div.text-center{
+    text-align: center;
+}
+
+.tm_plugin div.alternierend{
+    margin-bottom:15px;
+}
+
+.tm_plugin div.alternierend div.wp-block-column p{
+    margin:0;
+}
+
+.tm_plugin .wp-block-columns {
+    display: flex;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+.tm_plugin .wp-block-column {
+    margin-bottom: 1em;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+
+.tm_plugin .wp-block-column.tm_index_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.tm_plugin .wp-block-column.tm_index_link {
+    margin-top: auto;
+    text-align: right;
+}
+
+
+.tm_plugin .wp-block-column .weiterlesen_link{
+    margin-top:6px;
+    margin-bottom:6px;
+}
+.tm_plugin .wp-block-column .weiterlesen_link a{
+    color: #1d72bd;
+}
+
+/* Ensure the container for the articles is a grid with 3 columns on large screens */
+.tm_plugin .article-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Adjust spacing between items */
+    max-width: 1200px; /* Optional: to limit the maximum width */
+    margin: 0 auto; /* Optional: to center the grid */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 1200px) {
+    .tm_plugin .article-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .tm_plugin .article-container {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}
+
+.tm_plugin .tm_index_item .tm_index_cart {
+    margin-top: 10px;
+}
+
+.tm_plugin .tm_index_item .tm_index_cart form {
+    display: flex;
+    align-items: center;
+}
+
+.tm_plugin .tm_index_item .tm_index_cart .price_display {
+    margin-right: 20px;
+}
+
+.tm_plugin .tm_index_item .tm_index_cart .quantity_select {
+    width: auto;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+@media (min-width: 600px) {
+    .tm_plugin .wp-block-column:nth-child(even) {
+        margin-left: 32px;
+    }
+    .tm_plugin .wp-block-column {
+        flex-basis: calc(50% - 16px);
+        flex-grow: 0;
+    }
+}
+@media (min-width: 782px) {
+    .tm_plugin .wp-block-columns {
+        flex-wrap: nowrap;
+    }
+    .tm_plugin .wp-block-column:not(:first-child) {
+        margin-left: 32px;
+    }
+}
+
+.tm_plugin .block-timetable .datum{
+    font-size: 0.9rem;
+}
+.tm_plugin .block-timetable .linie_bezeichnung{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.tm_plugin .block-timetable .abfahrt_station{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.tm_plugin div.listcontingent .linie_bezeichnung{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.tm_plugin div.listcontingent .headline{
+    font-weight: bold;
+}
+
+/* Kalender Verf�gbarkeit*/
+.tm_plugin td.contingentcell a,
+.tm_plugin td.contingentcell span{
+    height:3rem;
+}
+.tm_plugin td.contingentcell a sub{
+    display: block;
+    text-align:right;
+}
+
+.tm_plugin img.referenzlogo{
+    max-width:300px;
+    max-height:150px;
+}
+
+/*Signet */
+.tm_plugin p.filter_signets input{
+    margin-right:9px;
+}
+
+/*Eventinfo */
+.tm_plugin .ui-datepicker {
+    border: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tm_plugin .ui-datepicker td {
+    border: none;
+}
+
+.tm_plugin .ui-datepicker .ui-state-default {
+    background: unset;
+    border: unset;
+}
+.tm_plugin .ui-widget{
+    font-family: unset;
+}
+
+.tm_plugin .ui-widget-header {
+    background: unset;
+    border:unset;
+}
+.tm_plugin .ui-datepicker th{
+    text-align: right;
+}
+
+
+/*Booking*/
+.tm_plugin .booking_window iframe{
+    width:100%;
+    height:600px;
+    overflow-y: scroll;
+}
+
+/* Grundlegender Stil für das Warenkorb-SV */
+.tm_plugin #travelmanager-cart-icon svg.shopping-cart {
+    padding: 10px;
+    width:30px;
+}
+.tm_plugin #travelmanager-cart-icon.items-present svg.shopping-cart{
+    cursor: pointer;
+}
+.tm_plugin #travelmanager-cart-icon #travelmanager-cart-status a {
+    vertical-align: top;
+}
+
+.tm_plugin .eventinfo_container{
+    max-width:1000px;
+    border: 1px solid #cacaca;
+    box-shadow: 0 3px 6px #00000029;
+    border-radius: 3px;
+    padding:10px;
+    margin:auto;
+}
+
+.tm_plugin .eventinfo_container h1,
+.tm_plugin .eventinfo_container h2,
+.tm_plugin .eventinfo_container h3
+{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.tm_plugin .eventinfo_container .ui-datepicker .ui-state-active,
+.tm_plugin .eventinfo_container ul li.tmaktiv
+{
+    background-color: #e5e5e5;
+}
+.tm_plugin .eventinfo_container .button_container_single_ride{
+    margin-top:5px;
+}
+.tm_plugin .eventinfo_container ul.uhrzeit_ul{
+    list-style-position: inside;
+    padding: 1px;
+    margin: 0;
+}
+.tm_plugin .eventinfo_container ul.uhrzeit_ul li{
+    list-style-type: none;
+    display: inline-block;
+    cursor: pointer;
+    padding:10px;
+}
+.tm_plugin .eventinfo_container ul.uhrzeit_ul li.soldout{
+    cursor: not-allowed;
+    background-color: grey;
+    text-decoration: line-through;
+    color: white;
+}
+
+.tm_plugin .eventinfo_container .abfahrt_hinweis,
+.tm_plugin .eventinfo_container .rueckfahrt_hinweis,
+.tm_plugin .eventinfo_container .highlights{
+    margin-top:12px;
+}
+.tm_plugin .eventinfo_container .flexslider{
+    margin-bottom:50px;
+}
+.tm_plugin .eventinfo_container .flexslider_container{
+    max-width: 100%;
+    margin:auto;
+}
+.tm_plugin .eventinfo_container .flexslider_container img,
+.tm_plugin .eventinfo_container .flexslider .slides img{
+    max-height: 350px;
+    width:unset;
+}
+.tm_plugin .eventinfo_container .flexslider ul.slides{
+    text-align: -webkit-center;
+}
+
+/*Container für TM Sitemap */
+.tm_plugin .tm_index_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Geändert von space-between */
+    gap: 20px; /* Ersetzt margin in .tm_index_container für gleichmäßigen Abstand */
+}
+
+.tm_plugin .tm_index_images {
+    text-align: center;
+}
+.tm_plugin .tm_index_images img{
+    max-height:150px;
+}
+
+.tm_plugin .tm_index_container {
+    flex: 1 1 calc(33.333% - 20px); /* Ermöglicht Boxen zu wachsen und schrumpfen */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-height: 200px;
+    margin-bottom: 20px; /* Abstand nach unten für den Fall, dass Boxen umfließen */
+}
+
+.tm_plugin .tm_index_headline,
+.tm_plugin .tm_index_infotext,
+.tm_plugin .tm_relationen,
+.tm_plugin .tm_relationen ul,
+.tm_plugin .tm_relationen li,
+.tm_plugin .tm_call_to_action {
+    font-size: 1rem;
+    font-weight: normal;
+}
+.tm_plugin .tm_call_to_action{
+    font-weight: bold;
+}
+.tm_plugin .tm_relationen{
+    margin-top:10px;
+}
+.tm_plugin .tm_index_infotext {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Begrenzt den Text auf 4 Zeilen */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2em;
+    max-height: 4.8em; /* basierend auf line-height von 1.2em */
+}
+
+.tm_plugin .tm_index_headline {
+    font-weight: bold;
+}
+
+.tm_plugin .tm_relationen ul {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+
+.tm_plugin .tm_relationen li {
+    margin-bottom: 5px;
+}
+
+.tm_plugin a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tm_plugin a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .tm_plugin .tm_index_wrapper {
+        flex-direction: column;
+    }
+
+    .tm_plugin .tm_index_container {
+        flex: 0 1 100%; /* Nimmt die volle Breite in Anspruch */
+    }
+}
+
+.tm_plugin .fahrtfinder2_container,
+.tm_plugin .fahrtfinder2_result_container,
+.tm_plugin .fahrtfinder2_tabs_container {
+    display: flex;
+    flex-wrap: wrap; /* Erlaubt den Spalten, in die nächste Zeile zu wechseln */
+    gap: 20px; /* Fügt einen Abstand zwischen den Spalten hinzu */
+    margin:5px;
+}
+.tm_plugin .fahrtfinder2_container{
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    border-radius: 5px;
+}
+.tm_plugin .fahrtfinder2_result_container .ui-tabs .ui-tabs-panel{
+    display: flex;
+}
+.tm_plugin .fahrtfinder2_container .column,
+.tm_plugin .fahrtfinder2_result_containerX .column,
+.tm_plugin .fahrtfinder2_tabs_container .column {
+    flex: 1; /* Ermöglicht den Spalten, den verfügbaren Raum gleichmäßig aufzuteilen */
+    min-width: 250px; /* Minimale Breite einer Spalte, bevor sie untereinander angeordnet werden */
+}
+
+.tm_plugin .fahrtfinder2_tabs_container .container_content {
+    height: 100%;
+}
+
+.tm_plugin .fahrtfinder2_tabs_container .bildcontainer{
+    text-align: center;
+    height:190px;
+    overflow: hidden;
+}
+
+.tm_plugin .fahrtfinder2_tabs_container .bildcontainer img{
+    width:100%;
+    max-height: 185px;
+}
+
+.tm_plugin .fahrtfinder2_tabs_container .column{
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Sorgt dafür, dass der Link am Boden der Kachel ist */
+}
+.tm_plugin .fahrtfinder2_tabs_container .column h2{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.tm_plugin .fahrtfinder2_tabs_container .column div{
+    font-size: 1rem;
+    font-weight: normal;
+}
+.tm_plugin .fahrtfinder2_tabs_container .buchen_button{
+    text-align: center;
+}
+/* Stil für Buttons */
+.tm_plugin .fahrtfinder2_container .finden .button,
+.tm_plugin .eventinfo_container .button_container_single_ride input[type="button"]
+{
+    padding: 8px 16px;
+    border: none; /* Entfernt die Grenze */
+    border-radius: 4px; /* Abgerundete Ecken */
+    font-size: 16px; /* Leicht lesbare Textgröße */
+    cursor: pointer; /* Zeigt einen Zeiger-Cursor an */
+    transition: background-color 0.3s; /* Sanfter Übergang für den Hintergrund */
+    margin-bottom: 10px; /* Fügt unten einen Abstand hinzu */
+    display: inline-block; /* Ermöglicht das Nebeneinanderstellen, falls gewünscht */
+}
+
+/* Stil für Buttons und Links, die wie Buttons aussehen */
+.tm_plugin .buttonShop,
+.tm_plugin a.buttonShop {
+    padding: 8px 16px;
+    border: none; /* Entfernt die Grenze */
+    border-radius: 4px; /* Abgerundete Ecken */
+    font-size: 16px; /* Leicht lesbare Textgröße */
+    cursor: pointer; /* Zeigt einen Zeiger-Cursor an */
+    transition: background-color 0.3s ease; /* Sanfter Übergang für den Hintergrund */
+    display: inline-block; /* Ermöglicht das Nebeneinanderstellen */
+    background-color: #cccccc; /* Standard-Button-Farbe */
+    text-align: center; /* Zentriert den Text */
+    text-decoration: none; /* Entfernt die Unterstreichung bei Links */
+}
+
+/* Hover-Effekt für Buttons und Links */
+.tm_plugin .buttonShop:hover,
+.tm_plugin a.buttonShop:hover {
+    background-color: #cccccc; /* Etwas dunkleres Grün bei Hover */
+}
+
+/* Aktiver Zustand (z.B. beim Klicken) */
+.tm_plugin .buttonShop:active,
+.tm_plugin a.buttonShop:active {
+    background-color: #cccccc; /* Noch dunkleres Grün bei Aktivierung */
+}
+
+.tm_plugin .fahrtfinder2_container .column.startstation select,
+.tm_plugin .fahrtfinder2_container .column.stopstation select {
+    height: 2.4375rem;
+    margin: 0 0 1rem;
+    padding: 0.5rem;
+    width:100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #cacaca;
+    border-radius: 0;
+    background-color: #fefefe;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0a0a0a;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24" style="fill: rgb%28138, 138, 138%29"></polygon></svg>');
+    background-origin: content-box;
+    background-position: right -1rem center;
+    background-repeat: no-repeat;
+    background-size: 9px 6px;
+    padding-right: 1.5rem;
+    -webkit-transition: border-color .25s ease-in-out,-webkit-box-shadow .5s;
+    transition: border-color .25s ease-in-out,-webkit-box-shadow .5s;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    transition: box-shadow .5s,border-color .25s ease-in-out,-webkit-box-shadow .5s;
+}
+.tm_plugin .fahrtfinder2_container .datumauswahl input[type="date"] {
+    height: 2.28rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #cacaca;
+    border-radius: 0;
+    background-color: #fefefe;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0a0a0a;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24" style="fill: rgb%28138, 138, 138%29"></polygon></svg>');
+    background-origin: content-box;
+    background-position: right -1rem center;
+    background-repeat: no-repeat;
+    background-size: 9px 6px;
+    padding-right: 1.5rem;
+    -webkit-transition: border-color .25s ease-in-out,-webkit-box-shadow .5s;
+    transition: border-color .25s ease-in-out,-webkit-box-shadow .5s;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    transition: box-shadow .5s,border-color .25s ease-in-out,-webkit-box-shadow .5s;
+    margin-right:5px;
+}
+
+.tm_plugin .fahrtfinder2_tabs_container .flexslider.carousel.tm-show-small{
+    width:100%;
+}
+
+.tm_plugin .rueckfahrt .button_container_single_ride {
+    margin-top:30px;
+}
+
+@media (min-width: 769px) {
+    .tm_plugin .tm-show-small{
+        display: none!important;
+    }
+}
+@media (max-width: 768px) {
+    .tm_plugin .fahrtfinder2_container {
+        flex-direction: column; /* Stapelt die Spalten untereinander */
+    }
+    .tm_plugin .tm-show-medium-up{
+        display: none!important;
+    }
+
+    .tm_plugin .fahrtfinder2_result_container .column{
+        margin:auto;
+    }
+}
+
+.tm_plugin .success_message{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:400px;
+}
+.tm_plugin .success_message .wp-block-columns{
+    margin-top:15px;
+}
